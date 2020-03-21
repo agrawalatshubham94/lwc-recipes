@@ -1,0 +1,11 @@
+<aura:component implements="flexipage:availableForAllPageTypes">
+    <aura:attribute name="greeting" type="String" default="World"></aura:attribute>
+
+    <lightning:card title="HelloBindingAura" iconName="custom:custom14">
+        <div class="slds-m-around_medium">
+            <p>Hello, {!v.greeting}!</p>
+            <lightning:input label="Name" value="{!v.greeting}" ></lightning:input>
+        </div>        
+    </lightning:card>
+
+</aura:component>	
